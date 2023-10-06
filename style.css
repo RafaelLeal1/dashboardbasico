@@ -193,7 +193,7 @@ body {
     background: #081b29;
     animation: showRight 1s ease forwards;
     animation-delay: 2.6s;
-    z-index: 100;**
+    z-index: 100;
 
 }
 
@@ -351,3 +351,356 @@ width: 0;: Define que, no estágio final da animação (100%), a largura do elem
     }
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative; /* separa dos demais conteúdos*/
+    font-size: 25px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;  /* animation: showRight 1s ease forwards;
+
+    A propriedade animation é usada para definir a animação de um elemento.
+    showRight é o nome da animação. Deve ser definido previamente utilizando a regra @keyframes no CSS para especificar os estágios da animação.
+    1s define a duração da animação como 1 segundo. Pode ser ajustado para aumentar ou diminuir a velocidade da animação.
+    ease é o valor da função de temporização (timing function). Neste caso, "ease" é uma função de aceleração que inicia lentamente, acelera no meio e diminui novamente no final da animação. Existem outras opções disponíveis, como "linear", "ease-in", "ease-out" e "ease-in-out".
+    forwards indica que o elemento deve manter o estado final da animação depois que ela for concluída. Isso significa que o elemento permanecerá no último estágio da animação após seu término.
+    animation-delay: .4s;
+    
+    A propriedade animation-delay é usada para definir um atraso antes de iniciar a animação de um elemento.
+    .4s define um atraso de 0,4 segundos antes de a animação começar. Você pode ajustar esse valor conforme necessário. */
+}
+
+.navbar a {
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500px;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: aqua;
+}
+
+
+.home {
+    height: 100vh;
+    background: url(home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+
+.home-content  h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+    
+
+}
+
+
+
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    width: 345px;
+    height: 50px;
+    justify-content: space-between;
+
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+    background: #081b29;
+}
+
+.home-imgHover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.6s;
+    z-index: 100;
+
+}
+
+
+
+.btn-box {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.btn-box a {
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box .a1 {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 19px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+
+
+.btn-box .a2
+ {
+    position: relative;
+    width: 190px;
+    height: 50px;
+    display: inline-flex;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: aqua;
+
+
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(29, 176, 202);
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: aqua;
+    z-index: -1 ;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 850px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+
+}
+
+.home-imgHover:hover {
+    background: #081b29;
+    opacity: .8;
+}
+
+
+/* keyframes animation */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+/* 100%: Indica o estágio final da animação, onde as propriedades especificadas serão aplicadas.
+width: 0;: Define que, no estágio final da animação (100%), a largura do elemento será definida como zero. Isso significa que o elemento será animado gradualmente de sua largura atual até uma largura de zero durante a duração da animação.
+*/ 
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
